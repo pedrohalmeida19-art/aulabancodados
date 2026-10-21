@@ -5,6 +5,8 @@ import { Aluno } from './alunos/aluno.entity.js';
 import { Livro } from './livraria.ts/livro.entity.js';
 import { Produto } from './produto.ts/produto.entity.js';
 import { modalidade } from './modalidade.ts/modalidade.entity.js';
+import { veiculo } from './veiculo.ts/veiculo.entity.js';
+import { Evento } from './evento.ts/evento.entity.js';
 
 @Module({
   imports: [
@@ -15,7 +17,7 @@ import { modalidade } from './modalidade.ts/modalidade.entity.js';
       username: 'root',
       password: '12345678',
       database: 'Escola_add2',
-      entities: [Aluno, Livro,Produto,modalidade, ],
+      entities: [Aluno, Livro,Produto,modalidade,veiculo,Evento ],
       synchronize: true,
     }),
   ],
